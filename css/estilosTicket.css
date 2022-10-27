@@ -3,11 +3,14 @@
 }
 
 main{
-  background-color: aqua;
+  background-color:aquamarine;
 }
+
 header{
   background-color: brown;
+  margin-bottom: 80px;;
 }
+
 
 footer{
   background-color: coral;
