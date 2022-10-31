@@ -14,11 +14,11 @@
       <!--Seccion principal -->
   <main>
     <div class="container-fluid">
-        <header class="d-flex flex-wrap py-3  border-bottom ">
+        <header class="d-flex flex-wrap py-3 ">
           <nav class="navbar navbar-expand-lg navbar-dark fixed-top estilo-nav">
             <div class="container-fluid">
 
-              <a class="navbar-brand" href="#">
+              <a class="navbar-brand" href="../index.html">
                 <img src="../assets/images/codoacodo.png" alt="imagen codo a codo"  style="width:6.5rem" >
                 Conf Bs As</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,84 +47,97 @@
 
         
             <!--Seccion Formulario-->
+            
             <section id="formulario" class="sectionFormulario ">
               <div class="sectionFormulario__contenedor">
                 
-                <div class="card-group g-2">
+                <div class="row row-cols-1 row-cols-md-3 mb-1 text-center">
+                  <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3 bg-success">
+                          <h4 class="card-title my-0 fw-bold text-white">Estudiante</h4>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-subtitle mb-2 text-muted">Tienen un descuento</h5>
+                          <h2 class="card-title">80%</h2>
+                          <p class="card-text">* presentar documentación</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3 bg-primary">
+                          <h4 class="card-title my-0 fw-bold text-white">Trainee</h4>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-subtitle mb-2 text-muted">Tienen un descuento</h5>
+                          <h2 class="card-title">50%</h2>
+                          <p class="card-text">* presentar documentación</p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3 bg-warning">
+                          <h4 class="card-title my-0 fw-bold text-white">Junior</h4>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-subtitle mb-2 text-muted">Tienen un descuento</h5>
+                          <h2 class="card-title">15%</h2>
+                          <p class="card-text">* presentar documentación</p>
+                        </div>
+                    </div>
+                  </div>
                   
-                  <div class="card text-center border-primary" style="width: 18rem;">
-                    <div class="card-body">
-                      <h3 class="card-title">Estudiante</h3>
-                      <h5 class="card-subtitle mb-2 text-muted">Tienen un descuento</h5>
-                      <h5 class="card-title">80%</h5>
-                      <p class="card-text">* presentar documentación</p>
-                      
-                    </div>
-                  </div>
-                  <div class="card text-center" style="width: 18rem;">
-                    <div class="card-body">
-                      <h3 class="card-title">Trainee</h3>
-                      <h5 class="card-subtitle mb-2 text-muted">Tienen un descuento</h5>
-                      <h5 class="card-title">50%</h5>
-                      <p class="card-text">* presentar documentación</p>
-                      
-                    </div>
-                  </div>
-                  <div class="card text-center" style="width: 18rem;">
-                    <div class="card-body">
-                      <h3 class="card-title">Junior</h3>
-                      <h5 class="card-subtitle mb-2 text-muted">Tienen un descuento</h5>
-                      <h5 class="card-title">15%</h5>
-                      <p class="card-text">* presentar documentación</p>
-                      
-                    </div>
-                  </div>
-                </div>
+                </div>    
+                
+                                   
             
                 <div class="sectionFormulario__titulos">
-                    <p id="sectionFormulario__titulos__conoce">VENTA  </p>
-                    <p id="sectionFormulario__titulos__oradores">VALOR DE TÍCKET $200</p>
-                        
+                    <p id="sectionFormulario__titulos__venta">VENTA  </p>
+                    <p id="sectionFormulario__titulos__valor">VALOR DE TÍCKET $200</p>
                 </div>
-            
-                <div class="sectionFormulario__form">
-                  <div class="row g-3 ">
-                      <div class="col-sm-6">
-                          <input type="text" class="form-control" id="firstName" placeholder="Nombre" value="" required>
-                      </div>
-                      <div class="col-sm-6">
-                          <input type="text" class="form-control" id="lastName" placeholder="Apellido" value="" required>
-                      </div>
-                      <div class="col-sm-12">
-                          <input type="text" class="form-control" id="correo" placeholder="Correo" value="" required>
-                      </div>
-                      <div class="col-sm-6 mt-4">
-                          <label for="textCantidad" class="form-label fw-bold">Cantidad</label>
-                          <input type="text" class="form-control" id="cantidad" placeholder="Cantidad" value="" required>
-                      </div>
-                      <div class="col-sm-6 mt-4">
-                        <label for="SelectCategoria" class="form-label fw-bold">Categoría</label>
-                        <select class="form-select" aria-label="--Categoría--">
-                          <option selected>-- Categoría --</option>
-                          <option value="1">Valor Normal</option>
-                          <option value="2">Estudiante</option>
-                          <option value="3">Trainee</option>
-                          <option value="3">Junior</option>
-                        </select>
-                    </div>
+                <form>
+                    <div class="sectionFormulario__form">
+                      <div class="row g-3 ">
+                          <div class="col-sm-6">
+                              <input type="text" class="form-control" id="nombre" placeholder="Nombre" value="">
+                          </div>
+                          <div class="col-sm-6">
+                              <input type="text" class="form-control" id="apellido" placeholder="Apellido" value="" >
+                          </div>
+                          <div class="col-sm-12">
+                              <input type="email" class="form-control" id="correo" placeholder="Correo" aria-describedby="emailHelp" value=""  >
+                          </div>
+                          <div class="col-sm-6 mt-4">
+                              <label for="textCantidad" class="form-label fw-bold">Cantidad</label>
+                              <input type="text" class="form-control" id="cantidad" placeholder="Cantidad" value="" >
+                          </div>
+                          <div class="col-sm-6 mt-4">
+                            <label for="SelectCategoria" class="form-label fw-bold">Categoría</label>
+                            <select class="form-select" aria-label="--Categoría--" id="categoria">
+                              
+                              <option value="1" selected>Valor Normal</option>
+                              <option value="2">Estudiante</option>
+                              <option value="3">Trainee</option>
+                              <option value="4">Junior</option>
+                            </select>
+                        </div>
+                        <div class=" alert col-sm-12 alert-primary"role="alert">
+                          Total a pagar: $ <span id="totalPagar" class="align-middle lblCosto"></span>
+                        </div>
 
-
-                      <div class="col-sm-6">
-                          <button class="btn sectionFormulario__btn" type="button">Borrar</button>
+                          <div class="col-sm-6">
+                              <button class="btn sectionFormulario__btn" type="reset" id="btnBorrar">Borrar</button>
+                          </div>
+                          <div class="col-sm-6">
+                              <button class="btn sectionFormulario__btn" type="button" id="btnResumen">Resumen</button>
+                          </div>
                       </div>
-                      <div class="col-sm-6">
-                          <button class="btn sectionFormulario__btn" type="button">Resumen</button>
-                      </div>
-                  </div>
                   
-                  
-                </div> 
-              </div>
+                  </form> 
+              </div> 
+            </div>
             </section>
     </div>
   </main >
@@ -147,7 +160,8 @@
     </footer>
 
     
-    <script src="../js/bootstrap.bundle.min.js" ></script>
+    <script src="../js/bootstrap.min.js" ></script>
+    <script src="../js/script_ticket.js"></script>
     
   </body>
 </html>

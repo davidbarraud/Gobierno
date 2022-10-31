@@ -3,14 +3,19 @@
 }
 
 main{
-  background-color:aquamarine;
+  
+  height: 80%;
 }
 
 header{
   background-color: brown;
-  margin-bottom: 80px;;
+  margin-bottom: 80px;
 }
 
+.lblCosto{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
 
 footer{
   background-color: coral;
@@ -31,7 +36,7 @@ footer{
   flex-direction: column;
   min-width: 0;
   align-items: center;
-  width: 60%;
+  width: 50%;
 }
 
 .sectionFormulario__titulos{
@@ -39,18 +44,18 @@ footer{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 5px;
+  margin-bottom: 10px;
    
 }
 
-#sectionFormulario__titulos__conoce{
+#sectionFormulario__titulos__venta{
   font-size: 1rem;
 }
 
-#sectionFormulario__titulos__oradores{
+#sectionFormulario__titulos__valor{
   font-size: 2.3rem;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 
@@ -58,22 +63,8 @@ footer{
 
 .sectionFormulario__form{
  
-  width:90%;
+  width:100%;
   
-}
-
-
-
-.sectionFormulario__textArea {
-  width: 100%;
-  height: 130px;
-  border-radius: 5px;
-  font-size: 1.6rem;
-  padding: 15px;
-  border: 1px solid #b8b8b8 ;
-}
-.sectionFormulario__textArea__p {
- font-size: 0.8rem;
 }
 
 .sectionFormulario__btn{
@@ -99,7 +90,7 @@ footer{
 /*###############################################################*/
                    /*****MEDIA QUERY********/
 
-@media screen  and (max-width:768px) {
+@media screen  and (max-width:1024px) {
 
 
 
@@ -111,7 +102,21 @@ footer{
   height: 30px;
 
 }
-
+main{
+  height: 100%;
+}
+#sectionFormulario__titulos__valor{
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+header{
+    margin-bottom: 100px;
+}
+.sectionFormulario__contenedor {
+ 
+  width: 60%;
+}
 
 
 }
